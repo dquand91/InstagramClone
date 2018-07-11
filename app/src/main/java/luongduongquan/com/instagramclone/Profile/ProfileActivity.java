@@ -1,4 +1,4 @@
-package luongduongquan.com.instagramclone;
+package luongduongquan.com.instagramclone.Profile;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,21 +10,22 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import luongduongquan.com.instagramclone.R;
 import luongduongquan.com.instagramclone.Utils.BottomNavigationViewHelper;
 
-public class ShareActivity extends AppCompatActivity {
-	private static final String TAG = "ShareActivity";
+public class ProfileActivity extends AppCompatActivity {
+	private static final String TAG = "ProfileActivity";
 
-	private static  final int ACTIVITY_NUM = 2;
+	private static  final int ACTIVITY_NUM = 4;
 
-	private Context mContext = ShareActivity.this;
+	private Context mContext = ProfileActivity.this;
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 		Log.d(TAG, "onCreate: ");
 		setupBottomNavigationView();
-		
+
 	}
 
 	private void setupBottomNavigationView(){

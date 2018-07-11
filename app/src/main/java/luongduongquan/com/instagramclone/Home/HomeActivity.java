@@ -1,7 +1,9 @@
-package luongduongquan.com.instagramclone;
+package luongduongquan.com.instagramclone.Home;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -9,6 +11,7 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import luongduongquan.com.instagramclone.R;
 import luongduongquan.com.instagramclone.Utils.BottomNavigationViewHelper;
 
 public class HomeActivity extends AppCompatActivity {
@@ -24,8 +27,35 @@ public class HomeActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_home);
 		Log.d(TAG, "onCreate: ");
 		setupBottomNavigationView();
+
+		setupViewPager();
 	}
 
+	/**
+	 * Responsible for adding the 3 tabs: Camera, Home, Messages
+	 */
+	private void setupViewPager(){
+		SectionPagerAdapter sectionPagerAdapter = new SectionPagerAdapter(getSupportFragmentManager());
+		sectionPagerAdapter.addFragment(new CameraFragment());
+		sectionPagerAdapter.addFragment(new HomeFragment());
+		sectionPagerAdapter.addFragment(new MessageFragment());
+
+		ViewPager viewPager = findViewById(R.id.viewpager_container_home);
+		viewPager.setAdapter(sectionPagerAdapter);
+
+		TabLayout tabLayout = findViewById(R.id.tabs_home);
+		tabLayout.setupWithViewPager(viewPager);
+
+		tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
+		tabLayout.getTabAt(1).setIcon(R.drawable.ic_instagram_black);
+		tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
+
+	}
+
+
+	/**
+	 * BottomNavigationView setup
+	 */
 	private void setupBottomNavigationView(){
 
 		Log.d(TAG, "setupBottomNavigationView: set up");

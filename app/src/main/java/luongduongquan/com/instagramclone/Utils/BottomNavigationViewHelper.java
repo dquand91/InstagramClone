@@ -9,12 +9,12 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-import luongduongquan.com.instagramclone.HomeActivity;
-import luongduongquan.com.instagramclone.LikesActivity;
-import luongduongquan.com.instagramclone.ProfileActivity;
+import luongduongquan.com.instagramclone.Home.HomeActivity;
+import luongduongquan.com.instagramclone.Likes.LikesActivity;
+import luongduongquan.com.instagramclone.Profile.ProfileActivity;
 import luongduongquan.com.instagramclone.R;
-import luongduongquan.com.instagramclone.SearchActivity;
-import luongduongquan.com.instagramclone.ShareActivity;
+import luongduongquan.com.instagramclone.Search.SearchActivity;
+import luongduongquan.com.instagramclone.Share.ShareActivity;
 
 /**
  * Created by User on 5/28/2017.

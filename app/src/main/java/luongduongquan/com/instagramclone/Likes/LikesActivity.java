@@ -1,4 +1,4 @@
-package luongduongquan.com.instagramclone;
+package luongduongquan.com.instagramclone.Likes;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import luongduongquan.com.instagramclone.R;
 import luongduongquan.com.instagramclone.Utils.BottomNavigationViewHelper;
 
 public class LikesActivity extends AppCompatActivity {

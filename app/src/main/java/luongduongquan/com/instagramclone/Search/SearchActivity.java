@@ -1,4 +1,4 @@
-package luongduongquan.com.instagramclone;
+package luongduongquan.com.instagramclone.Search;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,14 +10,16 @@ import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import luongduongquan.com.instagramclone.R;
 import luongduongquan.com.instagramclone.Utils.BottomNavigationViewHelper;
 
-public class ProfileActivity extends AppCompatActivity {
-	private static final String TAG = "ProfileActivity";
+public class SearchActivity extends AppCompatActivity {
+	private static final String TAG = "SearchActivity";
 
-	private static  final int ACTIVITY_NUM = 4;
+	private static  final int ACTIVITY_NUM = 1;
 
-	private Context mContext = ProfileActivity.this;
+	private Context mContext = SearchActivity.this;
+
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
