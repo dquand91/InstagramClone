@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
-
 import luongduongquan.com.instagramclone.R;
 import luongduongquan.com.instagramclone.Utils.UniversalImageLoader;
 
@@ -31,17 +29,22 @@ public class EditProfileFragment extends Fragment {
         Log.d(TAG, "onCreateView: init View");
 
         imgProfilePhoto = view.findViewById(R.id.profile_photo_EditProFile);
-
-
-        initImageLoader();
         saveProfileSettings();
+
+		//back arrow for navigating back to "ProfileActivity"
+		ImageView backArrow = (ImageView) view.findViewById(R.id.backArrow_EditProfile);
+		backArrow.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Log.d(TAG, "onClick: navigating back to ProfileActivity");
+				getActivity().finish();
+			}
+		});
+
         return view;
     }
 
-    private void initImageLoader(){
-        UniversalImageLoader universalImageLoader = new UniversalImageLoader(getActivity());
-        ImageLoader.getInstance().init(universalImageLoader.getConfig());
-    }
+
 
     private void saveProfileSettings(){
 
