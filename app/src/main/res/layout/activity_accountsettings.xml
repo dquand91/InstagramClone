@@ -5,17 +5,20 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <!--<include layout="@layout/layout_center_viewpager"/>-->
+    <!--Ý đồ ở đây là khi bấm vào 1 item trong account settings thì cái View chính của layout này sẽ GONE
+    Và cái ViewPager chứa các Fragment thành xuất hiện để người dùng tương tác-->
+
+    <include layout="@layout/layout_center_viewpager"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/relLayout1">
+        android:id="@+id/relLayout1_accountseting">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/relLayout2">
+            android:id="@+id/relLayout2_accountseting">
 
             <include layout="@layout/snippet_top_accountsettingtoolbar"/>
 
@@ -25,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/relLayout3"
-            android:layout_below="@+id/relLayout2"
+            android:layout_below="@+id/relLayout2_accountseting"
             android:layout_marginBottom="50dp">
 
             <include layout="@layout/layout_center_accountsettings"/>
