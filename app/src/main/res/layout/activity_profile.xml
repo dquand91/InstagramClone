@@ -10,7 +10,7 @@
         android:layout_height="match_parent">
 
 
-        <include layout="@layout/snippet_top_profilebar"/>
+        <include layout="@layout/layout_center_profile"/>
         <!--<FrameLayout-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="match_parent"-->
@@ -19,6 +19,14 @@
         <!--</FrameLayout>-->
 
         <include layout="@layout/layout_bottom_navigation_view"/>
+        
+        <ProgressBar
+            android:id="@+id/progressBar_Profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            />
 
     </RelativeLayout>
 
