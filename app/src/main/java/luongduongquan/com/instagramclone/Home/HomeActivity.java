@@ -103,7 +103,7 @@ public class HomeActivity extends AppCompatActivity {
 		Log.d(TAG, "checkCurrentUser: checking if user is logged in.");
 
 		if(user == null){
-			Log.d(TAG, "Did not login");
+			Log.d(TAG, "Did not login, intent to LoginActivity");
 			Intent intent = new Intent(mContext, LoginActivity.class);
 			startActivity(intent);
 		}

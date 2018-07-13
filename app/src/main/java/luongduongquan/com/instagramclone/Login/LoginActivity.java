@@ -1,6 +1,7 @@
 package luongduongquan.com.instagramclone.Login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import luongduongquan.com.instagramclone.Home.HomeActivity;
 import luongduongquan.com.instagramclone.R;
 
 
@@ -124,6 +126,26 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+
+		TextView linkSignUp = (TextView) findViewById(R.id.link_signup);
+		linkSignUp.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Log.d(TAG, "onClick: navigating to register screen");
+				Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+				startActivity(intent);
+			}
+		});
+
+         /*
+         If the user is logged in then navigate to HomeActivity and call 'finish()'
+          */
+		if(mAuth.getCurrentUser() != null){
+			Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+			startActivity(intent);
+			finish();
+		}
     }
 
     /**
