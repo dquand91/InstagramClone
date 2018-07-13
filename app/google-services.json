@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "797055703144",
+    "firebase_url": "https://quaninstagram-d3fb5.firebaseio.com",
+    "project_id": "quaninstagram-d3fb5",
+    "storage_bucket": "quaninstagram-d3fb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797055703144:android:0e2bcf8e6f6931c1",
+        "android_client_info": {
+          "package_name": "luongduongquan.com.instagramclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797055703144-vh8km4km2dhh4gn0195sns8tm29ll81l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luongduongquan.com.instagramclone",
+            "certificate_hash": "86a42df701ae16c38dd0ac6f24fd4c2c6b81ee46"
+          }
+        },
+        {
+          "client_id": "797055703144-lp2gch24sd7utt6r9csm72ksum20cjuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfeOOXFtR-52H6h4TMBGPdLnBiWVStnRY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797055703144-lp2gch24sd7utt6r9csm72ksum20cjuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

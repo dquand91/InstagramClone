@@ -33,6 +33,9 @@
 
         <activity android:name=".Profile.AccountSettingsActivity">
         </activity>
+
+        <activity android:name=".Login.RegisterActivity"></activity>
+        <activity android:name=".Login.LoginActivity"></activity>
     </application>
 
 </manifest>
