@@ -22,9 +22,9 @@ public class LikesActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home);
+		setContentView(R.layout.activity_login);
 		Log.d(TAG, "onCreate: ");
-		setupBottomNavigationView();
+//		setupBottomNavigationView();
 
 	}
 
