@@ -117,6 +117,9 @@ public class LoginActivity extends AppCompatActivity {
                                                 Toast.LENGTH_SHORT).show();
                                         mProgressBar.setVisibility(View.GONE);
                                         mPleaseWait.setVisibility(View.GONE);
+
+                                        Intent intentToHome = new Intent(LoginActivity.this, HomeActivity.class);
+                                        startActivity(intentToHome);
                                     }
 
                                     // ...
